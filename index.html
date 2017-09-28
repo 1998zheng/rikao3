@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="box">
+		<header>
+			<a href="javascript:;" class="bg">未使用</a>
+			<a href="javascript:;">已使用</a>
+			<a href="javascript:;">已过期</a>
+			<b class="line"></b>
+		</header>
+	</div>
+	<script>
+		var html = document.documentElement;
+		html.style.fontSize = html.clientWidth/375*50+"px";
+		var oA = document.getElementsByTagName('header')[0];
+		var oAs = oA.getElementsByTagName("a");
+		var line = document.getElementsByClassName('line')[0];
+		for(let i=0;i<oAs.length;i++){
+			oAs[i].onclick = function(){
+				for(var j=0;j<oAs.length;j++){
+					oAs[j].className = "";
+				}
+				this.className = "bg";
+				line.style.left = i*2.5+0.6+"rem";
+			}
+		}
+	</script>
+</body>
+</html>

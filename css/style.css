@@ -1,0 +1,126 @@
+@import url(./reset.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f3f3fe; }
+
+.box {
+  display: flex;
+  flex-direction: column; }
+
+body {
+  font-size: 0.32rem; }
+
+header {
+  width: 100%;
+  height: 1rem;
+  background: #fff;
+  line-height: 1rem;
+  border-bottom: 1px solid #eaeafd;
+  display: flex;
+  position: relative; }
+  header a {
+    flex: 1;
+    font-size: 0.35rem;
+    color: #999999;
+    text-align: center; }
+  header .bg {
+    color: #617ef6; }
+  header .line {
+    width: 1.4rem;
+    height: 2px;
+    position: absolute;
+    left: 0.6rem;
+    bottom: 0;
+    background: #617ef6;
+    transition: left 0.3s; }
+
+section {
+  width: 100%;
+  flex: 1;
+  background: #fff;
+  margin-top: 3%;
+  overflow: auto;
+  border-top: 1px solid #eaeafd; }
+  section .main {
+    width: 100%;
+    height: auto; }
+    section .main .quan {
+      width: 90%;
+      height: auto;
+      margin-left: 5%;
+      border: 1px solid #ccc;
+      margin-top: 4%;
+      border-radius: 0.1rem;
+      box-shadow: 0 0 3px #ccc; }
+      section .main .quan .tops {
+        height: 1.5rem;
+        position: relative;
+        background: #fd6060; }
+        section .main .quan .tops img {
+          width: 0.5rem;
+          margin-bottom: 0.4rem;
+          margin-left: 0.5rem; }
+        section .main .quan .tops b {
+          font-size: 1.4rem;
+          color: #fff;
+          margin-left: 0.5rem; }
+        section .main .quan .tops span {
+          font-size: 0.6rem;
+          color: #fff;
+          margin-left: 2.3rem; }
+        section .main .quan .tops ul {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          left: 0;
+          bottom: -0.07rem; }
+          section .main .quan .tops ul li {
+            float: left;
+            width: 0.15rem;
+            height: 0.15rem;
+            background: #fff;
+            border-radius: 50%;
+            margin-left: 0.1rem; }
+      section .main .quan p {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        padding: 0 0.5rem;
+        font-size: 0.25rem; }
+        section .main .quan p i {
+          width: 0.4rem;
+          height: 0.4rem;
+          display: inline-block;
+          background: url(../img/b.png) 0 0;
+          background-size: cover; }
+        section .main .quan p span {
+          color: #00a864; }
+        section .main .quan p:nth-child(3) {
+          margin-bottom: 0.2rem; }
+          section .main .quan p:nth-child(3) i {
+            width: 0.4rem;
+            height: 0.4rem;
+            display: inline-block;
+            background: url(../img/b.png) 0 0.35rem;
+            background-size: cover; }
+          section .main .quan p:nth-child(3) span {
+            color: #999999; }
+      section .main .quan:nth-child(2) .tops {
+        background: #5686f4; }
+        section .main .quan:nth-child(2) .tops span {
+          margin-left: 1.0rem; }
+      section .main .quan:nth-child(3) .tops {
+        background: #965df5; }
+        section .main .quan:nth-child(3) .tops span {
+          margin-left: 1.7rem; }
+      section .main .quan:nth-child(4) .tops {
+        background: #4bc670; }
+        section .main .quan:nth-child(4) .tops span {
+          margin-left: 1.7rem; }
+
+/*# sourceMappingURL=style.css.map */
